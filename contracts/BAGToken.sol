@@ -18,7 +18,7 @@ contract BAGToken is ERC20 {
         require(verify(proof), "Sorry we are full tonight");
         require(!claimed[msg.sender], "You've been there already");
         claimed[msg.sender] = true;
-        _mint(msg.sender, 5000000000000000000);
+        _mint(msg.sender, 5000);
     }
 
     function verify(bytes32[] memory proof) internal view returns (bool) {
