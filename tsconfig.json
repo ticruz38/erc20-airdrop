@@ -1,0 +1,23 @@
+{
+  // "include": ["src/**/*", "codegen.d.ts", "node_modules/*"],
+  "exclude": ["node_modules/*", "dist", "__sapper__"],
+  // "files": ["./hardhat.config.ts"],
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es2018",
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "noImplicitAny": false,
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "codegen": ["codegen"],
+      "utils": ["utils"]
+    },
+    // "checkJs": true,
+    // "allowJs": true,
+    "types": ["mocha", "chai"],
+    // "typeRoots": ["typings"],
+    "esModuleInterop": true
+  }
+}
